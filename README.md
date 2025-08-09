@@ -66,7 +66,7 @@
 <body>
   <header>
     <h1>Dip ‘n’ Dives</h1>
-    <p>Discover Nature’s Best Kept Swimming Secrets</p>
+    <p>Off Grid and Into Water</p>
   </header>
 
   <div class="container">
@@ -90,7 +90,7 @@
       </ul>
     </div>
 
-  <div class="about">
+<div class="about">
       <h3>🧭 Why We Built This</h3>
       <p>We’re swimmers, too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. No subscriptions. No nonsense. Just wild swimming, made easy.</p>
     </div>
