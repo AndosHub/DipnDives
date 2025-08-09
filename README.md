@@ -71,7 +71,7 @@
 
   <div class="container">
     <div class="cta">
-      <h2>🔥 Join Our Beta Launch!</h2>
+      <h2>Join Our Beta Launch For a Really Cool App</h2>
       <p>Get early access to the wildest swimming spots, submitted by real adventurers like you.</p>
       <input type="text" placeholder="First Name" />
       <input type="email" placeholder="Email Address" />
@@ -91,16 +91,16 @@
     </div>
 
 <div class="about">
-      <h3>🧭 Why We Built This</h3>
-      <p>We’re swimmers, too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. No subscriptions. No nonsense. Just wild swimming, made easy.</p>
+      <h3>Why We Built This</h3>
+      <p>We’re dippers and divers, too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. Just swimming in the wild, made easy. Find your spot, swim it, rate it, pin it.</p>
     </div>
 
   <div class="social">
-      <h3>🙌 Stay Cool, Get Wet</h3>
+      <h3>Stay Cool, Get Wet</h3>
       <p>
         Follow us: 
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
+        <a href="#">Instagram dont have</a>
+        <a href="#">Twitter dont have</a>
         <br>
       </p>
     </div>
