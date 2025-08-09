@@ -77,7 +77,7 @@
       <input type="email" placeholder="Email Address" />
       <br>
       <button>Join Now →</button>
-      <p><small>You’ll get early access in August 2025!</small></p>
+      <p><small>You’ll get early access in September 2025!</small></p>
     </div>
 
     <div class="features">
