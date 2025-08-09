@@ -80,8 +80,8 @@
       <p><small>You’ll get early access in September 2025!</small></p>
     </div>
 
-    <div class="features">
-      <h3>✅ What You’ll Get</h3>
+  <div class="features">
+  <h3> What You’ll Get</h3>
       <ul>
         <li>Access to our map of community-submitted “dips” and “dives”</li>
         <li>Add your own hidden spots with photos, tips & ratings</li>
@@ -90,12 +90,12 @@
       </ul>
     </div>
 
-    <div class="about">
+  <div class="about">
       <h3>🧭 Why We Built This</h3>
       <p>We’re swimmers, too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. No subscriptions. No nonsense. Just wild swimming, made easy.</p>
     </div>
 
-    <div class="social">
+  <div class="social">
       <h3>🙌 Stay Cool, Get Wet</h3>
       <p>
         Follow us: 
