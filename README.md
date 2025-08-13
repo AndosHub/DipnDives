@@ -65,7 +65,7 @@
 <body>
   <header>
     <h1>Dip ‘n’ Dives</h1>
-    <p>Off Grid and Into Water</p>
+    <p>Off The Grid and Into The Water</p>
   </header>
 
   <div class="container">
