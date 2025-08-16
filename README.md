@@ -1,191 +1,240 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dip 'n' Dives Beta Signup</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Default: Water Theme */
-      --primary: #287BA0;
-      --secondary: #3ED9D4;
-      --secondary-hover: #2cb7b2;
-      --accent: #A6F4DC;
-      --bg: #F0FAF9;
-      --text: #333;
-      --radius: 10px;
-    }
-
-  body.nature-theme {
-      --primary: #2F5233;
-      --secondary: #87C0D0;
-      --secondary-hover: #6AA9B8;
-      --accent: #A3B18A;
-      --bg: #F9F5EC;
-      --text: #333;
+      --sun-orange: #F8A22C;
+      --rock-red: #A63B24;
+      --deep-teal: #217190;
+      --aqua-blue: #43B8D1;
+      --sand-beige: #F6E6C5;
+      --dark-brown: #2C1B12;
+      --white: #ffffff;
     }
 
   body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: var(--sand-beige);
+      color: var(--dark-brown);
+      line-height: 1.6;
     }
 
-  header {
-      background-color: var(--primary);
-      color: white;
-      padding: 2rem 1rem;
+   header {
+      background-color: var(--deep-teal);
+      color: var(--white);
+      padding: 1.5rem 2rem;
       text-align: center;
-      transition: background-color 0.3s ease;
+    }
+
+  header img {
+      max-width: 220px;
+      display: block;
+      margin: 0 auto 1rem;
     }
 
   header h1 {
-      margin-bottom: 0.5rem;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
     }
 
-  main {
-      padding: 2rem 1rem;
+  header p {
+      margin: 0.25rem 0 0;
+      font-size: 1.1rem;
+    }
+
+   .container {
       max-width: 900px;
       margin: auto;
+      padding: 2rem;
     }
 
   .cta {
-      background-color: var(--accent);
-      padding: 1.5rem;
-      border-radius: var(--radius);
-      margin: 2rem 0;
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
       text-align: center;
-      transition: background-color 0.3s ease;
+      margin: 2rem 0;
+      border: 3px solid var(--rock-red);
     }
 
-  form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 1rem;
+  .cta h2 {
+      color: var(--deep-teal);
+      margin-bottom: 1rem;
     }
 
-  label {
-      display: none; /* Hidden but accessible */
+  .cta p {
+      margin-bottom: 1.5rem;
     }
 
-  input[type="text"],
+   form {
+      margin: 1rem 0;
+    }
+
+   input[type="text"],
     input[type="email"] {
-      flex: 1 1 250px;
       padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      margin: 0.5rem;
+      width: calc(50% - 1rem);
+      border: 2px solid var(--deep-teal);
+      border-radius: 6px;
       font-size: 1rem;
     }
 
   button {
-      background-color: var(--secondary);
-      color: white;
+      background-color: var(--sun-orange);
+      color: var(--white);
       border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
+      padding: 0.9rem 1.8rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    button:hover,
-    button:focus {
-      background-color: var(--secondary-hover);
-    }
-    .theme-toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: white;
-      color: var(--primary);
-      border: 2px solid var(--primary);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    .theme-toggle:hover {
-      background: var(--primary);
-      color: white;
-    }
-    section {
-      margin-top: 2rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .social-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-    .social-links a {
-      color: var(--primary);
-      text-decoration: none;
       font-weight: 700;
-    }
-    .social-links a:hover {
-      text-decoration: underline;
+      margin-top: 1rem;
+   }
+
+   button:hover {
+      background-color: var(--rock-red);
+  }
+
+  .features {
+      background-color: var(--aqua-blue);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+      color: var(--dark-brown);
+   }
+
+   .features h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--dark-brown);
+   }
+
+   .features ul {
+      list-style: none;
+      padding: 0;
+   }
+
+   .features li {
+      margin: 0.8rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+   }
+
+   .features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--rock-red);
+      font-weight: bold;
+   }
+
+  .about {
+      background-color: var(--sun-orange);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+      color: var(--white);
+   }
+
+  .about h3 {
+      margin-bottom: 1rem;
+  }
+
+  .signup {
+      background-color: var(--deep-teal);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 3rem 0;
+      text-align: center;
+      color: var(--white);
+  }
+
+  .signup button {
+      background-color: var(--sand-beige);
+      color: var(--rock-red);
+   }
+
+  .signup button:hover {
+      background-color: var(--rock-red);
+      color: var(--white);
+   }
+
+   footer {
+      background-color: var(--dark-brown);
+      color: var(--sand-beige);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+  }
+
+   footer a {
+      color: var(--aqua-blue);
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 700;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="your-logo.png" alt="Dip 'n' Dives Logo">
     <h1>Dip ‘n’ Dives</h1>
-    <p>Off The Grid and Into The Water</p>
-    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+    <p>Off The Grid, Into The Water</p>
   </header>
 
-  <main>
-    <section class="cta">
+  <div class="container">
+    <div class="cta">
       <h2>Join Our Beta Launch</h2>
       <p>Get early access to the wildest swimming spots, submitted by real adventurers like you.</p>
-      <!-- Mailchimp Form -->
-        <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
-        <label for="firstName">First Name</label>
-        <input id="firstName" name="FNAME" type="text" placeholder="First Name" required>
-       <label for="email">Email Address</label>
-        <input id="email" name="EMAIL" type="email" placeholder="Email Address" required>
-
-  <button type="submit">Join Now →</button>
+      
+ <!-- Mailchimp Form -->
+  <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
+        <input type="text" name="FNAME" placeholder="First Name" required />
+        <input type="email" name="EMAIL" placeholder="Email Address" required />
+        <br>
+        <button type="submit">Join Now →</button>
       </form>
-      <p><small>You’ll get early access in September 2025!</small></p>
-    </section>
-    <section class="features">
+      
+  <p><small>You’ll get early access in September 2025!</small></p>
+   </div>
+
+  <div class="features">
       <h3>What You’ll Get</h3>
       <ul>
         <li>Access to our map of community-submitted “dips” and “dives”</li>
         <li>Add your own hidden spots with photos, tips & ratings</li>
         <li>Save private gems to share with trusted friends</li>
         <li>Exclusive giveaways for early users</li>
-      </ul>
-    </section>
-
-  <section class="about">
+  </ul>
+   </div>
+   <div class="about">
       <h3>Why We Built This</h3>
-      <p>We’re dippers and divers too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. Just swimming in the wild, made easy. Find your spot, swim it, rate it, pin it.</p>
-    </section>
+      <p>We’re dippers and divers, too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. Just swimming in the wild, made easy. Find your spot, swim it, rate it, pin it.</p>
+  </div>
 
-  <section class="social">
+   <div class="signup">
       <h3>Stay Cool, Get Wet</h3>
-      <div class="social-links">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-      </div>
-    </section>
-  </main>
+      <p>Sign up and follow us for updates:</p>
+      <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
+        <input type="email" name="EMAIL" placeholder="Email Address" required />
+        <br>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
 
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('nature-theme');
-    }
-  </script>
+  <footer>
+    <p>© 2025 Dip ‘n’ Dives</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
 </body>
 </html>
-
-
