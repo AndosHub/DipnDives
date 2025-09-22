@@ -1,240 +1,391 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dip 'n' Dives Beta Signup</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --sun-orange: #F8A22C;
-      --rock-red: #A63B24;
-      --deep-teal: #217190;
-      --aqua-blue: #43B8D1;
-      --sand-beige: #F6E6C5;
-      --dark-brown: #2C1B12;
-      --white: #ffffff;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dip 'n' Dives - Join the Beta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--sand-beige);
-      color: var(--dark-brown);
-      line-height: 1.6;
-    }
+   body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #F6E6C5;
+            color: #2C1B12;
+            line-height: 1.6;
+        }
+    .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    /* Header */
+        .header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-   header {
-      background-color: var(--deep-teal);
-      color: var(--white);
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
+  .logo {
+            height: 60px;
+            width: auto;
+        }
 
-  header img {
-      max-width: 220px;
-      display: block;
-      margin: 0 auto 1rem;
-    }
+   .join-beta-btn {
+            background-color: #F8A22C;
+            color: #2C1B12;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
 
-  header h1 {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: 700;
-    }
+   .join-beta-btn:hover {
+            background-color: #e6921a;
+            transform: translateY(-2px);
+        }
 
-  header p {
-      margin: 0.25rem 0 0;
-      font-size: 1.1rem;
-    }
+   /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
 
-   .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
+   .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2C1B12;
+        }
 
-  .cta {
-      background-color: var(--white);
-      padding: 2rem;
-      border-radius: 12px;
-      text-align: center;
-      margin: 2rem 0;
-      border: 3px solid var(--rock-red);
-    }
+   .hero .highlight {
+            color: #217190;
+        }
+      .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #A63B24;
+        }
+    /* Signup Form */
+        .signup-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid #43B8D1;
+        }
+    .signup-form h3 {
+            color: #217190;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+    .signup-form p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
 
-  .cta h2 {
-      color: var(--deep-teal);
-      margin-bottom: 1rem;
-    }
+   .form-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+       .form-input {
+           flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+    .submit-btn {
+            background-color: #217190;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-  .cta p {
-      margin-bottom: 1.5rem;
-    }
+  .submit-btn:hover {
+            background-color: #1a5a73;
+        }
 
-   form {
-      margin: 1rem 0;
-    }
+   .form-footer {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+            margin-top: 15px;
+        }
+    /* Features Section */
+        .features {
+            padding: 80px 0;
+            text-align: center;
+        }
+    .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2C1B12;
+        }   
+  .features-subtitle {
+            color: #A63B24;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
 
-   input[type="text"],
-    input[type="email"] {
-      padding: 0.75rem;
-      margin: 0.5rem;
-      width: calc(50% - 1rem);
-      border: 2px solid var(--deep-teal);
-      border-radius: 6px;
-      font-size: 1rem;
-    }
+   .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
 
-  button {
-      background-color: var(--sun-orange);
-      color: var(--white);
-      border: none;
-      padding: 0.9rem 1.8rem;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 700;
-      margin-top: 1rem;
-   }
+   .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 2px solid #43B8D1;
+            transition: transform 0.3s ease;
+        }
 
-   button:hover {
-      background-color: var(--rock-red);
-  }
+   .feature-card:hover {
+            transform: translateY(-5px);
+        }
 
-  .features {
-      background-color: var(--aqua-blue);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-top: 3rem;
-      color: var(--dark-brown);
-   }
+   .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #217190;
+        }
 
-   .features h3 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: var(--dark-brown);
-   }
+   .feature-card h3 {
+            color: #2C1B12;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
 
-   .features ul {
-      list-style: none;
-      padding: 0;
-   }
+   .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
 
-   .features li {
-      margin: 0.8rem 0;
-      padding-left: 1.5rem;
-      position: relative;
-   }
+  /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #43B8D1 0%, #F8A22C 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
 
-   .features li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--rock-red);
-      font-weight: bold;
-   }
+   .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            /* Ensuring proper contrast for white text on gradient background */
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
 
-  .about {
-      background-color: var(--sun-orange);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-top: 3rem;
-      color: var(--white);
-   }
+   .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            /* Ensuring proper contrast for white text on gradient background */
+            color: #ffffff;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
 
-  .about h3 {
-      margin-bottom: 1rem;
-  }
+  .cta-form {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
 
-  .signup {
-      background-color: var(--deep-teal);
-      padding: 2rem;
-      border-radius: 12px;
-      margin: 3rem 0;
-      text-align: center;
-      color: var(--white);
-  }
+  .cta-form .form-group {
+            margin-bottom: 20px;
+        }
 
-  .signup button {
-      background-color: var(--sand-beige);
-      color: var(--rock-red);
-   }
+   .cta-submit {
+            background-color: #F8A22C;
+            color: #2C1B12;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-  .signup button:hover {
-      background-color: var(--rock-red);
-      color: var(--white);
-   }
+   .cta-submit:hover {
+            background-color: #e6921a;
+        }
 
-   footer {
-      background-color: var(--dark-brown);
-      color: var(--sand-beige);
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-  }
+   /* Footer */
+        .footer {
+            background-color: #2C1B12;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+.footer-logo {
+            height: 40px;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+        }
 
-   footer a {
-      color: var(--aqua-blue);
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-weight: 700;
-    }
-  </style>
+  .footer p {
+            /* Ensuring proper contrast for footer text */
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+   /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+   .hero h1 {
+                font-size: 2.5rem;
+            }
+
+   .form-group {
+                flex-direction: column;
+            }
+
+   .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="your-logo.png" alt="Dip 'n' Dives Logo">
-    <h1>Dip ‘n’ Dives</h1>
-    <p>Off The Grid, Into The Water</p>
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header">
+                <img src="/logo.png" alt="Dip 'n' Dives" class="logo">
+                <a href="#signup" class="join-beta-btn">Join the Beta</a>
+            </div>
+        </div>
+    </header>
 
-  <div class="container">
-    <div class="cta">
-      <h2>Join Our Beta Launch</h2>
-      <p>Get early access to the wildest swimming spots, submitted by real adventurers like you.</p>
-      
- <!-- Mailchimp Form -->
-  <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
-        <input type="text" name="FNAME" placeholder="First Name" required />
-        <input type="email" name="EMAIL" placeholder="Email Address" required />
-        <br>
-        <button type="submit">Join Now →</button>
-      </form>
-      
-  <p><small>You’ll get early access in September 2025!</small></p>
-   </div>
+    <!-- Hero Section -->
+ <section class="hero">
+        <div class="container">
+            <h1>Dive Into <span class="highlight">Adventure</span></h1>
+            <p>Join the beta community of outdoor enthusiasts discovering hidden swimming spots, secret diving locations, and off-the-beaten-path aquatic adventures.</p>
+            
+   <div class="signup-form" id="signup">
+                <h3>🏊 Get Early Access</h3>
+                <p>Be the first to explore when we launch this beta.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your email address" required>
+                        <button type="submit" class="submit-btn">Join Beta</button>
+                    </div>
+                    <div class="form-footer">
+                        ✓ Get adventure alerts  ✓ Launch updates
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <div class="features">
-      <h3>What You’ll Get</h3>
-      <ul>
-        <li>Access to our map of community-submitted “dips” and “dives”</li>
-        <li>Add your own hidden spots with photos, tips & ratings</li>
-        <li>Save private gems to share with trusted friends</li>
-        <li>Exclusive giveaways for early users</li>
-  </ul>
-   </div>
-   <div class="about">
-      <h3>Why We Built This</h3>
-      <p>We’re dippers and divers, too — and tired of overcrowded, overhyped spots. Dip ‘n’ Dives is all about keeping outdoor adventure accessible, authentic, and community-powered. Just swimming in the wild, made easy. Find your spot, swim it, rate it, pin it.</p>
-  </div>
+    <!-- Features Section -->
+ <section class="features">
+        <div class="container">
+            <h2>What Awaits You</h2>
+            <p class="features-subtitle">Beta access includes exclusive features for the ultimate aquatic adventure experience.</p>
+            
+   <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Hidden Locations</h3>
+                    <p>Discover secret swimming holes and diving spots known only to locals and adventure seekers.</p>
+                </div>
+                
+   <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Adventure Community</h3>
+                    <p>Connect with fellow water enthusiasts and share your favorite off-the-grid discoveries.</p>
+                </div>
+                
+   <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>Real-time conditions, safety ratings, and emergency contact for every aquatic location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   <div class="signup">
-      <h3>Stay Cool, Get Wet</h3>
-      <p>Sign up and follow us for updates:</p>
-      <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
-        <input type="email" name="EMAIL" placeholder="Email Address" required />
-        <br>
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
-  </div>
+    <!-- CTA Section -->
+  <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Make a Splash?</h2>
+            <p>Join thousands of adventurers already signed up for exclusive beta access.</p>
+            
+  <div class="cta-form">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your adventure starts here..." required>
+                    </div>
+                    <button type="submit" class="cta-submit">Dive In 🏊</button>
+                    <div class="form-footer">
+                        🔒 We won't send spam. Unsubscribe anytime.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Dip ‘n’ Dives</p>
-    <p>
-      <a href="#">Instagram</a> |
-      <a href="#">Twitter</a>
-    </p>
-  </footer>
+    <!-- Footer -->
+   <footer class="footer">
+        <div class="container">
+            <img src="/logo.png" alt="Dip 'n' Dives" class="footer-logo">
+            <p>© 2024 Dip 'n' Dives. Beta launching soon.</p>
+        </div>
+    </footer>
+
+   <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });  
+   // Form submission handling
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert('Thanks for joining the beta! We\'ll be in touch soon.');
+                    this.querySelector('input[type="email"]').value = '';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
